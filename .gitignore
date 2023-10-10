@@ -1,0 +1,4 @@
+.envrc.local
+.hugo_build.lock
+infra/.terraform/
+public/

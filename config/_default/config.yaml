@@ -1,0 +1,23 @@
+baseURL: FIXME
+title: FIXME
+languageCode: en-gb
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
+params:
+  showReadingTime: true
+  showToc: true
+
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 1
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 2

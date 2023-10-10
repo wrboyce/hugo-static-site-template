@@ -1,0 +1,16 @@
+---
+name: 🚀 Continuous Deployment
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches: ["master"]
+  workflow_dispatch: {}
+
+jobs:
+  cd:
+    uses: wrboyce/github-workflows/.github/workflows/hugo-cd.yaml@master
+    permissions:
+      id-token: write
+      contents: read
+    secrets:
+      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
